@@ -1,0 +1,15 @@
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Debug\bd.exe.config
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Debug\bd.exe
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Debug\bd.pdb
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Debug\EntityFramework.dll
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Debug\EntityFramework.SqlServer.dll
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Debug\EntityFramework.xml
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Debug\EntityFramework.SqlServer.xml
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\bd.csprojResolveAssemblyReference.cache
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\bd.csproj.GenerateResource.Cache
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\bd.exe
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\bd.pdb
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\mainForm.MainForm.resources
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\AddTeam.AddNewTeam.resources
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\AddTeam.Form1.resources
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\AddTeam.Properties.Resources.resources

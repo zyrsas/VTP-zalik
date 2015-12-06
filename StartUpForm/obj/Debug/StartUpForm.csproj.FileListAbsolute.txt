@@ -1,0 +1,9 @@
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\StartUpForm\bin\Debug\StartUpForm.exe.config
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\StartUpForm\bin\Debug\StartUpForm.exe
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\StartUpForm\bin\Debug\StartUpForm.pdb
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\StartUpForm\obj\Debug\StartUpForm.csprojResolveAssemblyReference.cache
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\StartUpForm\obj\Debug\StartUpForm.Form1.resources
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\StartUpForm\obj\Debug\StartUpForm.Properties.Resources.resources
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\StartUpForm\obj\Debug\StartUpForm.csproj.GenerateResource.Cache
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\StartUpForm\obj\Debug\StartUpForm.exe
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\StartUpForm\obj\Debug\StartUpForm.pdb

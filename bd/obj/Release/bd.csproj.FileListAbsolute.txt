@@ -1,0 +1,14 @@
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Release\bd.exe.config
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Release\bd.exe
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Release\bd.pdb
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Release\EntityFramework.dll
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Release\EntityFramework.SqlServer.dll
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Release\EntityFramework.xml
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\bin\Release\EntityFramework.SqlServer.xml
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Release\bd.Form1.resources
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Release\bd.Properties.Resources.resources
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Release\bd.csproj.GenerateResource.Cache
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Release\bd.exe
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Release\bd.pdb
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Release\mainForm.MainForm.resources
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Release\bd.csprojResolveAssemblyReference.cache

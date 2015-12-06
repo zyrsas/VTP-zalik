@@ -17,6 +17,7 @@ namespace AddTeam
     public partial class Form1 : Form
     {
         static string path = "pass.data";
+        static int count = 0;
 
         static string login;
         static string pass;
@@ -50,6 +51,13 @@ namespace AddTeam
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            if (count == 3)
+            {
+                MessageBox.Show("Перевищенна кількість спроб введення паролю! Програма завершить свою роботу!");
+                Close();
+            }
+
             if ( (textBox1.Text.Equals(login)) && (textBox2.Text.Equals(pass)) )
             {
                 this.Hide();
@@ -61,6 +69,9 @@ namespace AddTeam
             {
                 MessageBox.Show("Помилка! Перевірьте будь ласка дані! І спробуйте ще раз!");
                 textBox2.Clear();
+                count++;
+
+                countLabel.Text = Convert.ToString(3 - count);
             }
         }
     }

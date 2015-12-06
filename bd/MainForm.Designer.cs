@@ -97,6 +97,7 @@
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
+            this.файлToolStripMenuItem.ToolTipText = "Файл";
             // 
             // проПрограмуToolStripMenuItem
             // 
@@ -112,6 +113,7 @@
             this.змінитиПарольToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
             this.змінитиПарольToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.змінитиПарольToolStripMenuItem.Text = "Змінити пароль";
+            this.змінитиПарольToolStripMenuItem.ToolTipText = "Зміна пароля";
             this.змінитиПарольToolStripMenuItem.Click += new System.EventHandler(this.змінитиПарольToolStripMenuItem_Click);
             // 
             // проПрограмуToolStripMenuItem1
@@ -152,6 +154,7 @@
             this.addToolStrip.Name = "addToolStrip";
             this.addToolStrip.Size = new System.Drawing.Size(23, 22);
             this.addToolStrip.Text = "toolStripButton1";
+            this.addToolStrip.ToolTipText = "Добавлення команди\r\n";
             this.addToolStrip.Click += new System.EventHandler(this.addToolStrip_Click);
             // 
             // toolStripSeparator1
@@ -167,6 +170,7 @@
             this.DeleteToolStrip.Name = "DeleteToolStrip";
             this.DeleteToolStrip.Size = new System.Drawing.Size(23, 22);
             this.DeleteToolStrip.Text = "toolStripButton2";
+            this.DeleteToolStrip.ToolTipText = "Видалення команди";
             this.DeleteToolStrip.Click += new System.EventHandler(this.DeleteToolStrip_Click);
             // 
             // toolStripSeparator2
@@ -182,6 +186,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.ToolTipText = "Редагування команди";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // statusStrip1
@@ -199,6 +204,7 @@
             this.StatusStrip.Name = "StatusStrip";
             this.StatusStrip.Size = new System.Drawing.Size(45, 17);
             this.StatusStrip.Text = "Готово";
+            this.StatusStrip.ToolTipText = "Стан програми";
             this.StatusStrip.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
             // dataGridView1
@@ -293,6 +299,7 @@
             this.додатиToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
             this.додатиToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.додатиToolStripMenuItem.Text = "Додати";
+            this.додатиToolStripMenuItem.ToolTipText = "Добавити команду";
             this.додатиToolStripMenuItem.Click += new System.EventHandler(this.addToolStrip_Click);
             // 
             // редагуватиToolStripMenuItem
@@ -301,6 +308,7 @@
             this.редагуватиToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
             this.редагуватиToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.редагуватиToolStripMenuItem.Text = "Редагувати";
+            this.редагуватиToolStripMenuItem.ToolTipText = "Редагувати команду";
             this.редагуватиToolStripMenuItem.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // видалитиToolStripMenuItem
@@ -309,6 +317,7 @@
             this.видалитиToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
             this.видалитиToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
             this.видалитиToolStripMenuItem.Text = "Видалити";
+            this.видалитиToolStripMenuItem.ToolTipText = "Видалити команду";
             this.видалитиToolStripMenuItem.Click += new System.EventHandler(this.DeleteToolStrip_Click);
             // 
             // проПрограмуToolStripMenuItem2
@@ -317,6 +326,7 @@
             this.проПрограмуToolStripMenuItem2.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
             this.проПрограмуToolStripMenuItem2.Size = new System.Drawing.Size(197, 22);
             this.проПрограмуToolStripMenuItem2.Text = "Про програму";
+            this.проПрограмуToolStripMenuItem2.ToolTipText = "Про програму";
             this.проПрограмуToolStripMenuItem2.Click += new System.EventHandler(this.проПрограмуToolStripMenuItem2_Click);
             // 
             // вихідToolStripMenuItem
@@ -325,6 +335,7 @@
             this.вихідToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
             this.вихідToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.вихідToolStripMenuItem.Text = "Вихід";
+            this.вихідToolStripMenuItem.ToolTipText = "Вихід";
             this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
             // 
             // contextMenuStrip1
@@ -361,6 +372,7 @@
             // 
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(100, 25);
+            this.toolStripTextBox1.ToolTipText = "Пошук за містом";
             this.toolStripTextBox1.TextChanged += new System.EventHandler(this.toolStripTextBox1_TextChanged);
             // 
             // infoToolStrip
@@ -371,6 +383,7 @@
             this.infoToolStrip.Name = "infoToolStrip";
             this.infoToolStrip.Size = new System.Drawing.Size(23, 22);
             this.infoToolStrip.Text = "toolStripButton2";
+            this.infoToolStrip.ToolTipText = "Про програму";
             this.infoToolStrip.Click += new System.EventHandler(this.проПрограмуToolStripMenuItem2_Click);
             // 
             // toolStripSeparator4
@@ -386,6 +399,7 @@
             this.exitToolStrip.Name = "exitToolStrip";
             this.exitToolStrip.Size = new System.Drawing.Size(23, 22);
             this.exitToolStrip.Text = "toolStripButton2";
+            this.exitToolStrip.ToolTipText = "Вихід";
             this.exitToolStrip.Click += new System.EventHandler(this.exitToolStrip_Click);
             // 
             // MainForm

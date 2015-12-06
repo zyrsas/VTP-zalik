@@ -105,8 +105,7 @@ namespace mainForm
 
         private void проПрограмуToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            AboutForm aboutForm = new AboutForm();
-            aboutForm.ShowDialog();
+          
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)
@@ -125,6 +124,24 @@ namespace mainForm
             var db = new TeamContext();
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = db.Team.ToList();
+
+            statusStrip1.Text = "Відредаговано";
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void проПрограмуToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            AboutForm aboutForm = new AboutForm();
+            aboutForm.ShowDialog();
+        }
+
+        private void вихідToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
         }
 
        

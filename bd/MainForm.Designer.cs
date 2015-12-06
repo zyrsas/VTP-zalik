@@ -54,18 +54,33 @@
             this._FootballTeams_TeamContextDataSet = new AddTeam._FootballTeams_TeamContextDataSet();
             this.footballTeamsTableAdapter = new AddTeam._FootballTeams_TeamContextDataSetTableAdapters.FootballTeamsTableAdapter();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
+            this.редагуванняToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.додатиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.редагуватиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.видалитиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.проПрограмуToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.вихідToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.добавитиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.редагуватиToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.видалитиToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
+            this.infoToolStrip = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.footballTeamsBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._FootballTeams_TeamContextDataSet)).BeginInit();
+            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
+            this.редагуванняToolStripMenuItem,
             this.проПрограмуToolStripMenuItem,
             this.проПрограмуToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
@@ -76,6 +91,8 @@
             // 
             // файлToolStripMenuItem
             // 
+            this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.вихідToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
@@ -91,13 +108,17 @@
             // змінитиПарольToolStripMenuItem
             // 
             this.змінитиПарольToolStripMenuItem.Name = "змінитиПарольToolStripMenuItem";
-            this.змінитиПарольToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.змінитиПарольToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.змінитиПарольToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.змінитиПарольToolStripMenuItem.Text = "Змінити пароль";
             this.змінитиПарольToolStripMenuItem.Click += new System.EventHandler(this.змінитиПарольToolStripMenuItem_Click);
             // 
             // проПрограмуToolStripMenuItem1
             // 
+            this.проПрограмуToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.проПрограмуToolStripMenuItem2});
             this.проПрограмуToolStripMenuItem1.Name = "проПрограмуToolStripMenuItem1";
+            this.проПрограмуToolStripMenuItem1.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
             this.проПрограмуToolStripMenuItem1.Size = new System.Drawing.Size(99, 20);
             this.проПрограмуToolStripMenuItem1.Text = "Про програму";
             this.проПрограмуToolStripMenuItem1.Click += new System.EventHandler(this.проПрограмуToolStripMenuItem1_Click);
@@ -110,12 +131,16 @@
             this.toolStripButton1,
             this.toolStripSeparator2,
             this.DeleteToolStrip,
-            this.toolStripSeparator3});
+            this.toolStripSeparator4,
+            this.infoToolStrip,
+            this.toolStripSeparator3,
+            this.toolStripTextBox1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(864, 25);
             this.toolStrip1.TabIndex = 1;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // addToolStrip
             // 
@@ -185,6 +210,7 @@
             this.yearsDataGridViewTextBoxColumn,
             this.coachDataGridViewTextBoxColumn,
             this.capitanDataGridViewTextBoxColumn});
+            this.dataGridView1.ContextMenuStrip = this.contextMenuStrip1;
             this.dataGridView1.DataSource = this.footballTeamsBindingSource;
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 49);
@@ -249,6 +275,106 @@
             this.toolStripSeparator3.Name = "toolStripSeparator3";
             this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
             // 
+            // редагуванняToolStripMenuItem
+            // 
+            this.редагуванняToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.додатиToolStripMenuItem,
+            this.редагуватиToolStripMenuItem,
+            this.видалитиToolStripMenuItem});
+            this.редагуванняToolStripMenuItem.Name = "редагуванняToolStripMenuItem";
+            this.редагуванняToolStripMenuItem.Size = new System.Drawing.Size(87, 20);
+            this.редагуванняToolStripMenuItem.Text = "Редагування";
+            // 
+            // додатиToolStripMenuItem
+            // 
+            this.додатиToolStripMenuItem.Name = "додатиToolStripMenuItem";
+            this.додатиToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.A)));
+            this.додатиToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.додатиToolStripMenuItem.Text = "Додати";
+            this.додатиToolStripMenuItem.Click += new System.EventHandler(this.addToolStrip_Click);
+            // 
+            // редагуватиToolStripMenuItem
+            // 
+            this.редагуватиToolStripMenuItem.Name = "редагуватиToolStripMenuItem";
+            this.редагуватиToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.E)));
+            this.редагуватиToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.редагуватиToolStripMenuItem.Text = "Редагувати";
+            this.редагуватиToolStripMenuItem.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // видалитиToolStripMenuItem
+            // 
+            this.видалитиToolStripMenuItem.Name = "видалитиToolStripMenuItem";
+            this.видалитиToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.D)));
+            this.видалитиToolStripMenuItem.Size = new System.Drawing.Size(174, 22);
+            this.видалитиToolStripMenuItem.Text = "Видалити";
+            this.видалитиToolStripMenuItem.Click += new System.EventHandler(this.DeleteToolStrip_Click);
+            // 
+            // проПрограмуToolStripMenuItem2
+            // 
+            this.проПрограмуToolStripMenuItem2.Name = "проПрограмуToolStripMenuItem2";
+            this.проПрограмуToolStripMenuItem2.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Q)));
+            this.проПрограмуToolStripMenuItem2.Size = new System.Drawing.Size(197, 22);
+            this.проПрограмуToolStripMenuItem2.Text = "Про програму";
+            this.проПрограмуToolStripMenuItem2.Click += new System.EventHandler(this.проПрограмуToolStripMenuItem2_Click);
+            // 
+            // вихідToolStripMenuItem
+            // 
+            this.вихідToolStripMenuItem.Name = "вихідToolStripMenuItem";
+            this.вихідToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.X)));
+            this.вихідToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.вихідToolStripMenuItem.Text = "Вихід";
+            this.вихідToolStripMenuItem.Click += new System.EventHandler(this.вихідToolStripMenuItem_Click);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.добавитиToolStripMenuItem,
+            this.редагуватиToolStripMenuItem1,
+            this.видалитиToolStripMenuItem1});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(135, 70);
+            // 
+            // добавитиToolStripMenuItem
+            // 
+            this.добавитиToolStripMenuItem.Name = "добавитиToolStripMenuItem";
+            this.добавитиToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.добавитиToolStripMenuItem.Text = "Добавити";
+            this.добавитиToolStripMenuItem.Click += new System.EventHandler(this.addToolStrip_Click);
+            // 
+            // редагуватиToolStripMenuItem1
+            // 
+            this.редагуватиToolStripMenuItem1.Name = "редагуватиToolStripMenuItem1";
+            this.редагуватиToolStripMenuItem1.Size = new System.Drawing.Size(134, 22);
+            this.редагуватиToolStripMenuItem1.Text = "Редагувати";
+            this.редагуватиToolStripMenuItem1.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // видалитиToolStripMenuItem1
+            // 
+            this.видалитиToolStripMenuItem1.Name = "видалитиToolStripMenuItem1";
+            this.видалитиToolStripMenuItem1.Size = new System.Drawing.Size(134, 22);
+            this.видалитиToolStripMenuItem1.Text = "Видалити";
+            this.видалитиToolStripMenuItem1.Click += new System.EventHandler(this.DeleteToolStrip_Click);
+            // 
+            // toolStripTextBox1
+            // 
+            this.toolStripTextBox1.Name = "toolStripTextBox1";
+            this.toolStripTextBox1.Size = new System.Drawing.Size(100, 25);
+            // 
+            // infoToolStrip
+            // 
+            this.infoToolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.infoToolStrip.Image = ((System.Drawing.Image)(resources.GetObject("infoToolStrip.Image")));
+            this.infoToolStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.infoToolStrip.Name = "infoToolStrip";
+            this.infoToolStrip.Size = new System.Drawing.Size(23, 22);
+            this.infoToolStrip.Text = "toolStripButton2";
+            this.infoToolStrip.Click += new System.EventHandler(this.проПрограмуToolStripMenuItem2_Click);
+            // 
+            // toolStripSeparator4
+            // 
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -274,6 +400,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.footballTeamsBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._FootballTeams_TeamContextDataSet)).EndInit();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -305,5 +432,18 @@
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripMenuItem проПрограмуToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
+        private System.Windows.Forms.ToolStripMenuItem редагуванняToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem додатиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem редагуватиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem видалитиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem проПрограмуToolStripMenuItem2;
+        private System.Windows.Forms.ToolStripMenuItem вихідToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem добавитиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem редагуватиToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem видалитиToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
+        private System.Windows.Forms.ToolStripButton infoToolStrip;
+        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
     }
 }

@@ -30,7 +30,15 @@ namespace AddTeam
                 var team = new FootballTeam { };
                 team.name = textBox1.Text;
                 team.city = textBox2.Text;
-                team.years = Int32.Parse(textBox3.Text);
+                try
+                {
+                    team.years = Int32.Parse(textBox3.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("Помилка! Не вірні дані!");
+                    return;
+                }
                 team.coach = textBox4.Text;
                 team.capitan = textBox5.Text;
                 db.Team.Add(team);

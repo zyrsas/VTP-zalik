@@ -59,6 +59,11 @@ namespace mainForm
             int row = dataGridView1.CurrentCell.RowIndex;
             int id = Int32.Parse(dataGridView1.Rows[row].Cells[0].Value.ToString());
            
+            if (id < 0)
+            {
+                return;
+            }
+
             const string message ="Ви дійсно хочете видалити?";
             const string caption = "Підтвердження видалення";
             var result = MessageBox.Show(message, caption,
@@ -83,6 +88,7 @@ namespace mainForm
 
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = db.Team.ToList();
+
 
             dataGridView1.Refresh();
          
@@ -112,6 +118,12 @@ namespace mainForm
         {
             int row = dataGridView1.CurrentCell.RowIndex;
             int id = Int32.Parse(dataGridView1.Rows[row].Cells[0].Value.ToString());
+            
+            if (id < 0)
+            {
+                return;
+            }
+            
             string name = dataGridView1.Rows[row].Cells[1].Value.ToString();
             string city = dataGridView1.Rows[row].Cells[2].Value.ToString();
             int year = Int32.Parse(dataGridView1.Rows[row].Cells[3].Value.ToString());
@@ -140,6 +152,32 @@ namespace mainForm
         }
 
         private void вихідToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void toolStripTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+            //MessageBox.Show("event");
+
+                using (var context = new TeamContext())
+                {
+                    string city = toolStripTextBox1.Text;
+
+                    string sql = String.Format("SELECT * FROM FootballTeams WHERE city LIKE '{0}%'", city);
+
+                   // MessageBox.Show(sql);
+
+                    var blogs = context.Team.SqlQuery(sql).ToList();
+                    dataGridView1.DataSource = blogs;
+                }
+                    
+
+            
+        }
+
+        private void exitToolStrip_Click(object sender, EventArgs e)
         {
             Close();
         }

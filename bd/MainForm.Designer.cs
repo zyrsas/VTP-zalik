@@ -67,6 +67,7 @@
             this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
             this.infoToolStrip = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStrip = new System.Windows.Forms.ToolStripButton();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -134,7 +135,8 @@
             this.toolStripSeparator4,
             this.infoToolStrip,
             this.toolStripSeparator3,
-            this.toolStripTextBox1});
+            this.toolStripTextBox1,
+            this.exitToolStrip});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(864, 25);
@@ -359,6 +361,7 @@
             // 
             this.toolStripTextBox1.Name = "toolStripTextBox1";
             this.toolStripTextBox1.Size = new System.Drawing.Size(100, 25);
+            this.toolStripTextBox1.TextChanged += new System.EventHandler(this.toolStripTextBox1_TextChanged);
             // 
             // infoToolStrip
             // 
@@ -374,6 +377,16 @@
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
             this.toolStripSeparator4.Size = new System.Drawing.Size(6, 25);
+            // 
+            // exitToolStrip
+            // 
+            this.exitToolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.exitToolStrip.Image = ((System.Drawing.Image)(resources.GetObject("exitToolStrip.Image")));
+            this.exitToolStrip.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.exitToolStrip.Name = "exitToolStrip";
+            this.exitToolStrip.Size = new System.Drawing.Size(23, 22);
+            this.exitToolStrip.Text = "toolStripButton2";
+            this.exitToolStrip.Click += new System.EventHandler(this.exitToolStrip_Click);
             // 
             // MainForm
             // 
@@ -445,5 +458,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.ToolStripButton infoToolStrip;
         private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
+        private System.Windows.Forms.ToolStripButton exitToolStrip;
     }
 }

@@ -49,7 +49,15 @@ namespace Edit
         {
             nameG = textBox1.Text;
             cityG = textBox2.Text;
-            yearsG = Int32.Parse(textBox3.Text);
+            try
+            {
+                yearsG = Int32.Parse(textBox3.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Помилка!Ви ввели не вірні дані!");
+                return;
+            }
             coachG = textBox4.Text;
             capitanG = textBox5.Text;
 

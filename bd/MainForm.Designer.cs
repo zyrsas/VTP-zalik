@@ -53,6 +53,7 @@
             this.footballTeamsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._FootballTeams_TeamContextDataSet = new AddTeam._FootballTeams_TeamContextDataSet();
             this.footballTeamsTableAdapter = new AddTeam._FootballTeams_TeamContextDataSetTableAdapters.FootballTeamsTableAdapter();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -106,9 +107,10 @@
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addToolStrip,
             this.toolStripSeparator1,
-            this.DeleteToolStrip,
+            this.toolStripButton1,
             this.toolStripSeparator2,
-            this.toolStripButton1});
+            this.DeleteToolStrip,
+            this.toolStripSeparator3});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(864, 25);
@@ -153,6 +155,7 @@
             this.toolStripButton1.Name = "toolStripButton1";
             this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
             this.toolStripButton1.Text = "toolStripButton1";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // statusStrip1
             // 
@@ -241,6 +244,11 @@
             // 
             this.footballTeamsTableAdapter.ClearBeforeFill = true;
             // 
+            // toolStripSeparator3
+            // 
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
+            this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -296,5 +304,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.ToolStripMenuItem проПрограмуToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
     }
 }

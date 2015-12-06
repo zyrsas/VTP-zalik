@@ -11,6 +11,7 @@ using FootballTeams;
 using AddTeam;
 using ChangePass;
 using About;
+using Edit;
 
 namespace mainForm
 {
@@ -106,6 +107,20 @@ namespace mainForm
         {
             AboutForm aboutForm = new AboutForm();
             aboutForm.ShowDialog();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            int row = dataGridView1.CurrentCell.RowIndex;
+            int id = Int32.Parse(dataGridView1.Rows[row].Cells[0].Value.ToString());
+            string name = dataGridView1.Rows[row].Cells[1].Value.ToString();
+            string city = dataGridView1.Rows[row].Cells[2].Value.ToString();
+            int year = Int32.Parse(dataGridView1.Rows[row].Cells[3].Value.ToString());
+            string coach = dataGridView1.Rows[row].Cells[4].Value.ToString();
+            string capitan = dataGridView1.Rows[row].Cells[5].Value.ToString();
+
+            EditForm editForm = new EditForm(id, name, city, year, coach, capitan);
+            editForm.ShowDialog();
         }
 
        

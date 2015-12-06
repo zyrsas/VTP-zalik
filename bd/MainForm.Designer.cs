@@ -33,22 +33,26 @@
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.проПрограмуToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.змінитиПарольToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.проПрограмуToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.addToolStrip = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.DeleteToolStrip = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.StatusStrip = new System.Windows.Forms.ToolStripStatusLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.footballTeamsBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._FootballTeams_TeamContextDataSet = new AddTeam._FootballTeams_TeamContextDataSet();
-            this.footballTeamsTableAdapter = new AddTeam._FootballTeams_TeamContextDataSetTableAdapters.FootballTeamsTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cityDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.yearsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coachDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.capitanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.footballTeamsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._FootballTeams_TeamContextDataSet = new AddTeam._FootballTeams_TeamContextDataSet();
+            this.footballTeamsTableAdapter = new AddTeam._FootballTeams_TeamContextDataSetTableAdapters.FootballTeamsTableAdapter();
             this.menuStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.statusStrip1.SuspendLayout();
@@ -61,7 +65,8 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
-            this.проПрограмуToolStripMenuItem});
+            this.проПрограмуToolStripMenuItem,
+            this.проПрограмуToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(864, 24);
@@ -76,16 +81,34 @@
             // 
             // проПрограмуToolStripMenuItem
             // 
+            this.проПрограмуToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.змінитиПарольToolStripMenuItem});
             this.проПрограмуToolStripMenuItem.Name = "проПрограмуToolStripMenuItem";
-            this.проПрограмуToolStripMenuItem.Size = new System.Drawing.Size(99, 20);
-            this.проПрограмуToolStripMenuItem.Text = "Про програму";
+            this.проПрограмуToolStripMenuItem.Size = new System.Drawing.Size(101, 20);
+            this.проПрограмуToolStripMenuItem.Text = "Налаштування";
+            // 
+            // змінитиПарольToolStripMenuItem
+            // 
+            this.змінитиПарольToolStripMenuItem.Name = "змінитиПарольToolStripMenuItem";
+            this.змінитиПарольToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.змінитиПарольToolStripMenuItem.Text = "Змінити пароль";
+            this.змінитиПарольToolStripMenuItem.Click += new System.EventHandler(this.змінитиПарольToolStripMenuItem_Click);
+            // 
+            // проПрограмуToolStripMenuItem1
+            // 
+            this.проПрограмуToolStripMenuItem1.Name = "проПрограмуToolStripMenuItem1";
+            this.проПрограмуToolStripMenuItem1.Size = new System.Drawing.Size(99, 20);
+            this.проПрограмуToolStripMenuItem1.Text = "Про програму";
+            this.проПрограмуToolStripMenuItem1.Click += new System.EventHandler(this.проПрограмуToolStripMenuItem1_Click);
             // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addToolStrip,
             this.toolStripSeparator1,
-            this.DeleteToolStrip});
+            this.DeleteToolStrip,
+            this.toolStripSeparator2,
+            this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 24);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Size = new System.Drawing.Size(864, 25);
@@ -102,6 +125,11 @@
             this.addToolStrip.Text = "toolStripButton1";
             this.addToolStrip.Click += new System.EventHandler(this.addToolStrip_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
             // DeleteToolStrip
             // 
             this.DeleteToolStrip.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -111,6 +139,20 @@
             this.DeleteToolStrip.Size = new System.Drawing.Size(23, 22);
             this.DeleteToolStrip.Text = "toolStripButton2";
             this.DeleteToolStrip.Click += new System.EventHandler(this.DeleteToolStrip_Click);
+            // 
+            // toolStripSeparator2
+            // 
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "toolStripButton1";
             // 
             // statusStrip1
             // 
@@ -146,20 +188,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(864, 302);
             this.dataGridView1.TabIndex = 3;
-            // 
-            // footballTeamsBindingSource
-            // 
-            this.footballTeamsBindingSource.DataMember = "FootballTeams";
-            this.footballTeamsBindingSource.DataSource = this._FootballTeams_TeamContextDataSet;
-            // 
-            // _FootballTeams_TeamContextDataSet
-            // 
-            this._FootballTeams_TeamContextDataSet.DataSetName = "_FootballTeams_TeamContextDataSet";
-            this._FootballTeams_TeamContextDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // footballTeamsTableAdapter
-            // 
-            this.footballTeamsTableAdapter.ClearBeforeFill = true;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // idDataGridViewTextBoxColumn
             // 
@@ -198,10 +227,19 @@
             this.capitanDataGridViewTextBoxColumn.HeaderText = "capitan";
             this.capitanDataGridViewTextBoxColumn.Name = "capitanDataGridViewTextBoxColumn";
             // 
-            // toolStripSeparator1
+            // footballTeamsBindingSource
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 25);
+            this.footballTeamsBindingSource.DataMember = "FootballTeams";
+            this.footballTeamsBindingSource.DataSource = this._FootballTeams_TeamContextDataSet;
+            // 
+            // _FootballTeams_TeamContextDataSet
+            // 
+            this._FootballTeams_TeamContextDataSet.DataSetName = "_FootballTeams_TeamContextDataSet";
+            this._FootballTeams_TeamContextDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // footballTeamsTableAdapter
+            // 
+            this.footballTeamsTableAdapter.ClearBeforeFill = true;
             // 
             // MainForm
             // 
@@ -254,5 +292,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn coachDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn capitanDataGridViewTextBoxColumn;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem змінитиПарольToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.ToolStripMenuItem проПрограмуToolStripMenuItem1;
     }
 }

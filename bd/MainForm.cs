@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using FootballTeams;
 using AddTeam;
+using ChangePass;
+using About;
 
 namespace mainForm
 {
@@ -82,13 +84,28 @@ namespace mainForm
             dataGridView1.DataSource = db.Team.ToList();
 
             dataGridView1.Refresh();
-         /*   dataGridView1.Refresh();
-
-            dataGridView1.Update();
-
-            dataGridView1.EndEdit();
-            dataGridView1.Refresh();*/
+         
             StatusStrip.Text = "Видалено";
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void змінитиПарольToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ChangePassword ChangePassForm = new ChangePassword();
+            ChangePassForm.ShowDialog();
+
+
+            StatusStrip.Text = "Пароль змінено";
+        }
+
+        private void проПрограмуToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            AboutForm aboutForm = new AboutForm();
+            aboutForm.ShowDialog();
         }
 
        

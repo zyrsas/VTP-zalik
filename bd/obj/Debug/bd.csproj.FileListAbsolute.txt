@@ -13,3 +13,5 @@ E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\m
 E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\AddTeam.AddNewTeam.resources
 E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\AddTeam.Form1.resources
 E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\AddTeam.Properties.Resources.resources
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\ChangePass.ChangePassword.resources
+E:\Навчання\III курс\I семестр\С#\zalik\bd\bd\bd\obj\Debug\About.AboutForm.resources

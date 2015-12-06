@@ -121,6 +121,10 @@ namespace mainForm
 
             EditForm editForm = new EditForm(id, name, city, year, coach, capitan);
             editForm.ShowDialog();
+
+            var db = new TeamContext();
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = db.Team.ToList();
         }
 
        
